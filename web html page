@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales & Stock Management System</title>
+</head>
+
+<body>
+
+    <h1>Sales & Stock Management System</h1>
+    <p>Manage products, stock, sales, quantities and bills.</p>
+
+    <hr>
+
+    <!-- Product Details -->
+    <h2>1. Product Details</h2>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Supplier</th>
+        </tr>
+
+        <tr>
+            <td>P001</td>
+            <td>Laptop</td>
+            <td>Electronics</td>
+            <td>₹50,000</td>
+            <td>ABC Electronics</td>
+        </tr>
+
+        <tr>
+            <td>P002</td>
+            <td>Keyboard</td>
+            <td>Accessories</td>
+            <td>₹1,500</td>
+            <td>XYZ Computers</td>
+        </tr>
+
+        <tr>
+            <td>P003</td>
+            <td>Mouse</td>
+            <td>Accessories</td>
+            <td>₹800</td>
+            <td>XYZ Computers</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Stock Details -->
+    <h2>2. Stock Details</h2>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Stock ID</th>
+            <th>Product ID</th>
+            <th>Opening Stock</th>
+            <th>Purchased</th>
+            <th>Sold</th>
+            <th>Available Stock</th>
+            <th>Reorder Level</th>
+        </tr>
+
+        <tr>
+            <td>S001</td>
+            <td>P001</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>25</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td>S002</td>
+            <td>P002</td>
+            <td>50</td>
+            <td>20</td>
+            <td>15</td>
+            <td>55</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td>S003</td>
+            <td>P003</td>
+            <td>40</td>
+            <td>10</td>
+            <td>20</td>
+            <td>30</td>
+            <td>10</td>
+        </tr>
+    </table>
+
+    <p>
+        <b>Available Stock = Opening Stock + Purchased − Sold</b>
+    </p>
+
+    <br>
+
+    <!-- Sale Details -->
+    <h2>3. Sale Details</h2>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Sale ID</th>
+            <th>Customer ID</th>
+            <th>Product ID</th>
+            <th>Quantity Sold</th>
+            <th>Price</th>
+            <th>Sale Date</th>
+        </tr>
+
+        <tr>
+            <td>SALE001</td>
+            <td>C001</td>
+            <td>P001</td>
+            <td>2</td>
+            <td>₹50,000</td>
+            <td>16-09-2026</td>
+        </tr>
+
+        <tr>
+            <td>SALE002</td>
+            <td>C002</td>
+            <td>P002</td>
+            <td>3</td>
+            <td>₹1,500</td>
+            <td>16-09-2026</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Customer Details -->
+    <h2>4. Customer Details</h2>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Customer ID</th>
+            <th>Customer Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+
+        <tr>
+            <td>C001</td>
+            <td>Rahul Patil</td>
+            <td>9876543210</td>
+            <td>rahul@gmail.com</td>
+            <td>Nipani</td>
+        </tr>
+
+        <tr>
+            <td>C002</td>
+            <td>Arjun Kumar</td>
+            <td>9876501234</td>
+            <td>arjun@gmail.com</td>
+            <td>Belagavi</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Bill Calculation -->
+    <h2>5. Bill Calculation</h2>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Description</th>
+            <th>Amount</th>
+        </tr>
+
+        <tr>
+            <td>Product Price</td>
+            <td>₹50,000</td>
+        </tr>
+
+        <tr>
+            <td>Quantity</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td>Subtotal</td>
+            <td>₹1,00,000</td>
+        </tr>
+
+        <tr>
+            <td>Discount</td>
+            <td>₹5,000</td>
+        </tr>
+
+        <tr>
+            <td>GST (18%)</td>
+            <td>₹17,100</td>
+        </tr>
+
+        <tr>
+            <th>Final Bill</th>
+            <th>₹1,12,100</th>
+        </tr>
+    </table>
+
+    <br>
+
+    <hr>
+
+    <h2>System Summary</h2>
+
+    <ul>
+        <li>Total Products: 3</li>
+        <li>Total Customers: 2</li>
+        <li>Total Sales: 2</li>
+        <li>Stock is monitored regularly.</li>
+        <li>Bill is calculated based on price and quantity.</li>
+    </ul>
+
+    <footer>
+        <p>© 2026 Sales & Stock Management System</p>
+    </footer>
+
+</body>
+</html>
